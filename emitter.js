@@ -19,4 +19,5 @@ Emitter.prototype.emit = function(type) {
   }
 };
 
-module.exports =
+// Make the function constructor available so you can create as many emitters as necessary.
+module.exports = Emitter;
