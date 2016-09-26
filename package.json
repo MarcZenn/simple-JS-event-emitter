@@ -1,0 +1,19 @@
+{
+  "name": "simple-js-event-emitter",
+  "version": "1.0.0",
+  "description": "example of a vanilla ES6 event emitter",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcZenn/simple-JS-event-emitter.git"
+  },
+  "author": "Marc Zenn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcZenn/simple-JS-event-emitter/issues"
+  },
+  "homepage": "https://github.com/MarcZenn/simple-JS-event-emitter#readme"
+}
