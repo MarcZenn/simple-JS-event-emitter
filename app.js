@@ -1,6 +1,10 @@
 // return module.exports which is now the function constructor from emitter.js
 var Emitter = require('./emitter');
 
+// Another alternative here would be to delete the local emitter.js file and simply require Node's internal core JS module (events.js).
+
+var NodeInternalEventEmitter = require('events');
+
 // Create new instance of the Emitter constructor function who'se prototype will now contain an .on() and .emit() method previuously defined in emitter.js
 var emtr = new Emitter();
 
@@ -13,5 +17,5 @@ emtr.on('greet', function() {
   console.log('another persons says Hi!!');
 });
 
-// Here we explicitly let the application know that a 'greet' event happened (twice) which will then run the functions passed to the .on() method above and result in your desired behavior.
+// Here we must explicitly say that a 'greet' event happened which will then run the functions passed to the .on() method above and result in all your desired behavior.
 emtr.emit('greet');
